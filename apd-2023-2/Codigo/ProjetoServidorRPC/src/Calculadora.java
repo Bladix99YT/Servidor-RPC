@@ -1,59 +1,59 @@
 public class Calculadora {
 
-    public int adicao(int x, int y) {
+    public int Adicao(int x, int y) {
         return x + y;
     }
 
-    public int subtracao(int x, int y) {
+    public int Subtracao(int x, int y) {
         return x - y;
     }
 
-    public int multiplicacao(int x, int y) {
+    public int Multiplicacao(int x, int y) {
         return x * y;
     }
 
-    public double divisao(int x, int y) {
+    public double Divisao(int x, int y) {
         if (y == 0) {
             System.out.println("Erro: Divisão por zero.");
         }
         return  x / y;
     }
 
-    public int areaquadrado(int x){
-        return x * x; 
+    public int Areaquadrado(int x){
+        return x * x;
     }
 
-    public int areatrianguloret(int x, int y){
+    public int Areatrianguloret(int x, int y){
         return x * y / 2;
     }
 
-    public double areacircunferencia(int x){
-        return Math.PI * x * x;
+    public double Areacircunferencia(int x){
+        return Math.PI * Math.pow(x, 2);
     }
 
-    public double areaesfera(int x){
-        return 4 * Math.PI * x * x;
+    public double Areaesfera(int x){
+        return 4 * Math.PI * Math.pow(x, 2);
     }
 
-    public double volumeesfera(int x){
-        return 4 * Math.PI * x * x * x / 3;
+    public double Volumeesfera(int x){
+        return 4 * Math.PI * Math.pow(x, 3) / 3;
     }
 
-    public double areacilindro(int x, int y){ // Usando a formula entre parenteses precisou-se colocar 2 variaveis separadas para cada procedimento e usando a biblioteca math.pi
+    public double Areacilindro(int x, int y){ // Usando a formula entre parenteses precisou-se colocar 2 variaveis separadas para cada procedimento e usando a biblioteca math.pi
         double areaLateral = 2 * Math.PI * x * y;
-        double areaBase = 2 * Math.PI * x * x;
+        double areaBase = 2 * Math.PI * Math.pow(x, 2);
         return areaLateral + areaBase;
     }
 
-    public double volumecilindro(int x, int y){
-        return Math.PI * x * x * y;
+    public double Volumecilindro(int x, int y){
+        return Math.PI * Math.pow(x, 2) * y;
     }
 
-    public int areacubo(int x){
-        return 6 * x * x;
+    public double Areacubo(int x){
+        return 6 * Math.pow(x, 2);
     }
 
-    public double volumecubo(int x){
+    public double Volumecubo(int x){
         return Math.pow(x, 3); // utilizando biblioteca de matematica do java para simplificar a potenciação
     }
 }
