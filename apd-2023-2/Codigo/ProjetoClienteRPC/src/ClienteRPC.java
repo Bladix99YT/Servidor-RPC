@@ -19,81 +19,81 @@ public class ClienteRPC {
         }
     }
 
-    public int somar(int x, int y) throws Exception {
+    public int Somar(int x, int y) throws Exception {
         Object[] parametros = new Object[]{Integer.valueOf(x), Integer.valueOf(y)};
-        Integer resultado = (Integer) cliente.execute("Calc.adicao", parametros);
+        Integer resultado = (Integer) cliente.execute("Calc.Adicao", parametros);
         return resultado;
     }
 
-    public int subtrair(int x, int y) throws Exception {
+    public int Subtrair(int x, int y) throws Exception {
         Object[] parametros = new Object[]{Integer.valueOf(x), Integer.valueOf(y)};
-        Integer resultado = (Integer) cliente.execute("Calc.subtracao", parametros);
+        Integer resultado = (Integer) cliente.execute("Calc.Subtracao", parametros);
         return resultado;
     }
 
-    public int multiplicar(int x, int y) throws Exception {
+    public int Multiplicar(int x, int y) throws Exception {
         Object[] parametros = new Object[]{Integer.valueOf(x), Integer.valueOf(y)};
-        Integer resultado = (Integer) cliente.execute("Calc.multiplicacao", parametros);
+        Integer resultado = (Integer) cliente.execute("Calc.Multiplicacao", parametros);
         return resultado;
     }
 
-    public double dividir(int x, int y) throws Exception {
+    public double Dividir(int x, int y) throws Exception {
         Object[] parametros = new Object[]{Integer.valueOf(x), Integer.valueOf(y)};
-        Double resultado = (Double) cliente.execute("Calc.divisao", parametros);
+        Double resultado = (Double) cliente.execute("Calc.Divisao", parametros);
         return resultado;
     }
 
-    public int areaquadrado(int x) throws Exception{
+    public int Areaquadrado(int x) throws Exception{
         Object[] parametros = new Object[]{Integer.valueOf(x)};
-        Integer resultado = (Integer) cliente.execute("Calc.areaquadrado", parametros); // adicionados os objetos da calculadora para calcular geometria
+        Integer resultado = (Integer) cliente.execute("Calc.Areaquadrado", parametros); // adicionados os objetos da calculadora para calcular geometria
         return resultado;
     }
 
-    public int areatrianguloret(int x, int y) throws Exception{
+    public int Areatrianguloret(int x, int y) throws Exception{
         Object[] parametros = new Object[]{Integer.valueOf(x), Integer.valueOf(y)};
-        Integer resultado = (Integer) cliente.execute("Calc.areatrianguloret", parametros);
+        Integer resultado = (Integer) cliente.execute("Calc.Areatrianguloret", parametros);
         return resultado;
     }
 
-    public double areacircunferencia(int x) throws Exception{
+    public double Areacircunferencia(int x) throws Exception{
         Object[] parametros = new Object[]{Integer.valueOf(x)};
-        Double resultado = (Double) cliente.execute("Calc.areacircunferencia", parametros);
+        Double resultado = (Double) cliente.execute("Calc.Areacircunferencia", parametros);
         return resultado;
     }
 
-    public double areaesfera(int x) throws Exception{
+    public double Areaesfera(int x) throws Exception{
         Object[] parametros = new Object[]{Integer.valueOf(x)};
-        Double resultado = (Double) cliente.execute("Calc.areaesfera", parametros);
+        Double resultado = (Double) cliente.execute("Calc.Areaesfera", parametros);
         return resultado;
     }
 
-    public double volumeesfera(int x) throws Exception{
+    public double Volumeesfera(int x) throws Exception{
         Object[] parametros = new Object[]{Integer.valueOf(x)};
-        Double resultado = (Double) cliente.execute("Calc.volumeesfera", parametros);
+        Double resultado = (Double) cliente.execute("Calc.Volumeesfera", parametros);
         return resultado;
     }
 
-    public double areacilindro(int x, int y) throws Exception{
+    public double Areacilindro(int x, int y) throws Exception{
         Object[] parametros = new Object[]{Integer.valueOf(x), Integer.valueOf(y)};
-        Double resultado = (Double) cliente.execute("Calc.areacilindro", parametros);
+        Double resultado = (Double) cliente.execute("Calc.Areacilindro", parametros);
         return resultado;
     }
 
-    public double volumecilindro(int x, int y) throws Exception{
+    public double Volumecilindro(int x, int y) throws Exception{
         Object[] parametros = new Object[]{Integer.valueOf(x), Integer.valueOf(y)};
-        Double resultado = (Double) cliente.execute("Calc.volumecilindro", parametros);
+        Double resultado = (Double) cliente.execute("Calc.Volumecilindro", parametros);
         return resultado;
     }
 
-    public int areacubo(int x) throws Exception{
+    public double Areacubo(int x) throws Exception{
         Object[] parametros = new Object[]{Integer.valueOf(x)};
-        Integer resultado = (Integer) cliente.execute("Calc.areacubo", parametros);
+        Double resultado = (Double) cliente.execute("Calc.Areacubo", parametros);
         return resultado;
     }
 
-    public double volumecubo(int x) throws Exception{
+    public double Volumecubo(int x) throws Exception{
         Object[] parametros = new Object[]{Integer.valueOf(x)};
-        Double resultado = (Double) cliente.execute("Calc.volumecubo", parametros);
+        Double resultado = (Double) cliente.execute("Calc.Volumecubo", parametros);
         return resultado;
     }
 }

@@ -42,62 +42,71 @@ public class App {
                     x = scanner.nextInt();
                     System.out.print("Digite o segundo número: ");
                     y = scanner.nextInt();
-                    resultado = rpc.somar(x, y);
+                    resultado = rpc.Somar(x, y);
+                    System.out.println("Resultado: \n" + resultado);
                     break;
                 case 2:
                     System.out.print("Digite o primeiro número: ");
                     x = scanner.nextInt();
                     System.out.print("Digite o segundo número: ");
                     y = scanner.nextInt();
-                    resultado = rpc.subtrair(x, y);
+                    resultado = rpc.Subtrair(x, y);
+                    System.out.println("Resultado: \n" + resultado);
                     break;
                 case 3:
                     System.out.print("Digite o primeiro número: ");
                     x = scanner.nextInt();
                     System.out.print("Digite o segundo número: ");
                     y = scanner.nextInt();
-                    resultado = rpc.multiplicar(x, y);
+                    resultado = rpc.Multiplicar(x, y);
+                    System.out.println("Resultado: \n" + resultado);
                     break;
                 case 4:
                     System.out.print("Digite o primeiro número: ");
                     x = scanner.nextInt();
                     System.out.print("Digite o segundo número: ");
                     y = scanner.nextInt();
-                    resultado = rpc.dividir(x, y);
+                    resultado = rpc.Dividir(x, y);
+                    System.out.println("Resultado: \n" + resultado);
                     break;
 
                 // Começo das operações Geométricas "Case 5 area do quadrado até case 13 volume de um cubo"
                 case 5:
                     System.out.println("Informe o comprimento do lado a ser calculado do quadrado: ");
                     x = scanner.nextInt();
-                    resultado = rpc.areaquadrado(x);
+                    resultado = rpc.Areaquadrado(x);
+                    System.out.println("Resultado: \n" + resultado);
                     break;
 
-                // 
+                
                 case 6:
                     System.out.println("Informe o primeiro lado do cateto: ");
                     x = scanner.nextInt();
                     System.out.println("Informe o segundo lado do cateto: ");
                     y = scanner.nextInt();
-                    resultado = rpc.areatrianguloret(x, y);
+                    resultado = rpc.Areatrianguloret(x, y);
+                    System.out.println("Resultado: \n" + resultado);
                     break;
                 
                 case 7:
                     System.out.println("Informe o valor do raio da circunferencia: ");
                     x = scanner.nextInt();
-                    resultado = rpc.areacircunferencia(x);
+                    resultado = rpc.Areacircunferencia(x);
+                    System.out.println("Resultado: \n" + resultado);
                     break;
 
                 case 8:
                     System.out.println("Informe o valor do raio da esfera: ");
                     x = scanner.nextInt();
-                    resultado = rpc.areaesfera(x);
+                    resultado = rpc.Areaesfera(x);
+                    System.out.println("Resultado: \n" + resultado);
                     break;
 
                 case 9:
                     System.out.println("Informe o raio da esfera: ");
                     x = scanner.nextInt();
-                    resultado = rpc.volumeesfera(x);
+                    resultado = rpc.Volumeesfera(x);
+                    System.out.println("Resultado: \n" + resultado);
                     break;
 
                 case 10:
@@ -105,7 +114,8 @@ public class App {
                     x = scanner.nextInt();
                     System.out.println("Informe a altura do cilindro");
                     y = scanner.nextInt();
-                    resultado = rpc.areacilindro(x, y);
+                    resultado = rpc.Areacilindro(x, y);
+                    System.out.println("Resultado: \n" + resultado);
                     break;
                 
                 case 11:
@@ -113,19 +123,22 @@ public class App {
                     x = scanner.nextInt();
                     System.out.println("Informe a altura do cilindro: ");
                     y = scanner.nextInt();
-                    resultado = rpc.volumecilindro(x, y);
+                    resultado = rpc.Volumecilindro(x, y);
+                    System.out.println("Resultado: \n" + resultado);
                     break;
 
                 case 12:
                     System.out.println("Informe um lado do cubo: ");
                     x = scanner.nextInt();
-                    resultado = rpc.areacubo(x);
+                    resultado = rpc.Areacubo(x);
+                    System.out.println("Resultado: \n" + resultado);
                     break;
 
                 case 13:
                     System.out.println("Informe um lado do cubo: ");
                     x = scanner.nextInt();
-                    resultado = rpc.volumecubo(x);
+                    resultado = rpc.Volumecubo(x);
+                    System.out.println("Resultado: \n" + resultado);
                     break;
                  
                 default:
